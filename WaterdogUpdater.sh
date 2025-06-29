@@ -1,15 +1,38 @@
 #!/bin/bash
 set -e
 
-cd "$(dirname "$(realpath "$0")")"/../waterdog || {
-  echo "❌ No se pudo entrar a ../waterdog"
-  exit 1
-}
+#cd "$(dirname "$(realpath "$0")")"/../waterdog || {
+#  echo "❌ No se pudo entrar a ../waterdog"
+#  exit 1
+#}
+
+
+# Configs
+
+GITHUB_TOKEN=""
+# Requerido para Actions 
+
+JAVAVER=/usr/lib/jvm/java-11-openjdk/bin/java
+# Version Java a Usar
 
 JAR_NAME="Waterdog.jar"
 ZIP_NAME="waterdog.zip"
-JAVAVER=/usr/lib/jvm/java-11-openjdk/bin/java
-GITHUB_TOKEN=""
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 check_need_download() {
   local remote_date="$1"
